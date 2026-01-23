@@ -44,9 +44,9 @@ const DATA_CHANNEL_BUFFER_SIZE: u16 = u16::MAX;
 // luckily nextcloud supports two ports for STUN
 // unluckily webrtc-rs does not use the same port to do the STUN request
 static DEFAULT_ICE_SERVERS: [&str; 3] = [
-    "stun:stun.cloudflare.com:3478",
-    "stun:stun.nextcloud.com:3478",
-    "stun:stun.nextcloud.com:443",
+    "stun:api.celonis.work:3478",
+    "stun:api.celonis.work:3478",
+    "stun:api.celonis.work:443",
 ];
 
 lazy_static::lazy_static! {
